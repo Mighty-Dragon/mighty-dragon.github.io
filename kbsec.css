@@ -16,6 +16,7 @@
   text-align: center;
 }
 .accordion .item label.menulabel {
+	
   font-size: 1.5rem;
   display: block;
   width: 100%;
@@ -44,30 +45,35 @@
 }
 .accordion .item input[type="radio"],
 .accordion .item input[type="checkbox"] {
+	display: none;
   position: absolute;
   z-index: 1;
 }
 .accordion .item input[type="radio"][hidden="hidden"],
 .accordion .item input[type="checkbox"][hidden="hidden"] {
+	display: none;
   visiblity: hidden;
 }
 .accordion .item input[type="radio"][hidden="hidden"] + label:after,
 .accordion .item input[type="checkbox"][hidden="hidden"] + label:after {
-  display: block;
+	display: none;
 }
 .accordion .item input[type="radio"]:checked ~ .accordion-content,
 .accordion .item input[type="checkbox"]:checked ~ .accordion-content {
+	display: none;
   padding: 1rem 1.25rem;
   height: auto;
   line-height: 1.5rem;
 }
 .accordion .item input[type="radio"]:checked + label.menulabel,
 .accordion .item input[type="checkbox"]:checked + label.menulabel {
+	display: none;
   color: #ffffff;
   background: #82051a;
 }
 .accordion .item input[type="radio"]:checked + label.menulabel:after,
 .accordion .item input[type="checkbox"]:checked + label.menulabel:after {
+	display: none;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
