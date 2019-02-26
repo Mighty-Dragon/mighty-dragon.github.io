@@ -27,7 +27,7 @@
   text-align: center;
 }
 .accordion .item label.menulabel:after {
-  display: inline;
+  display: none;
   text-align: center;
   content: "+";
   position: absolute;
