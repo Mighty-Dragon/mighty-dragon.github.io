@@ -54,7 +54,7 @@
 }
 .accordion .item input[type="hidden"]:checked ~ .accordion-content,
 .accordion .item input[type="hidden"]:checked ~ .accordion-content {
-  padding: 1rem 1.25rem;
+  padding: 0;
   height: auto;
   line-height: 1.5rem;
 }
@@ -72,7 +72,7 @@
   color: #ffffff;
 }
 .accordion .item .accordion-content {
-  padding: 0 1.25rem;
+  padding: 0;
   height: 0;
   color: #000000;
   background: #ffffff;
