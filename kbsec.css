@@ -9,9 +9,7 @@
   overflow: hidden;
   font-type: Arial;
   font-size: 14px;
-  margin-bottom: 0.25rem;
-  border: 0.063rem solid silver;
-  width: 50%;
+  width: 255px;
 }
 .accordion .item:hover label.menulabel {
   color: #c7c5c5;
