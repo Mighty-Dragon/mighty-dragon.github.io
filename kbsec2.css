@@ -1,6 +1,5 @@
 .last {
-  margin-bottom: 2rem;
-}
+  }
 
 .accordion .item {
   color: #000000;
@@ -42,32 +41,32 @@
   -webkit-transition: transform 0.2s ease-out;
   -moz-transition: transform 0.2s ease-out;
 }
-.accordion .item input[type="radio"],
-.accordion .item input[type="checkbox"] {
+.accordion .item input[type="hidden"],
+.accordion .item input[type="hidden"] {
   position: absolute;
   z-index: 1;
 }
-.accordion .item input[type="radio"][hidden="hidden"],
-.accordion .item input[type="checkbox"][hidden="hidden"] {
+.accordion .item input[type="hidden"][hidden="hidden"],
+.accordion .item input[type="hidden"][hidden="hidden"] {
   visiblity: hidden;
 }
-.accordion .item input[type="radio"][hidden="hidden"] + label:after,
-.accordion .item input[type="checkbox"][hidden="hidden"] + label:after {
+.accordion .item input[type="hidden"][hidden="hidden"] + label:after,
+.accordion .item input[type="hidden"][hidden="hidden"] + label:after {
   display: block;
 }
-.accordion .item input[type="radio"]:checked ~ .accordion-content,
-.accordion .item input[type="checkbox"]:checked ~ .accordion-content {
+.accordion .item input[type="hidden"]:checked ~ .accordion-content,
+.accordion .item input[type="hidden"]:checked ~ .accordion-content {
   padding: 1rem 1.25rem;
   height: auto;
   line-height: 1.5rem;
 }
-.accordion .item input[type="radio"]:checked + label.menulabel,
-.accordion .item input[type="checkbox"]:checked + label.menulabel {
+.accordion .item input[type="hidden"]:checked + label.menulabel,
+.accordion .item input[type="hidden"]:checked + label.menulabel {
   color: #ffffff;
   background: #82051a;
 }
-.accordion .item input[type="radio"]:checked + label.menulabel:after,
-.accordion .item input[type="checkbox"]:checked + label.menulabel:after {
+.accordion .item input[type="hidden"]:checked + label.menulabel:after,
+.accordion .item input[type="hidden"]:checked + label.menulabel:after {
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
