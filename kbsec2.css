@@ -11,7 +11,7 @@
   width: 35%;
 }
 .accordion .item:hover label.menulabel {
-  color: #c7c5c5;
+  color: #FFFFFF;
   text-align: center;
 }
 .accordion .item label.menulabel {
@@ -26,18 +26,12 @@
 .accordion .item label.menulabel:after {
   display: none;
   text-align: center;
-  content: "+";
   position: absolute;
   top: 50%;
   right: 3.5rem;
   margin-top: -20px;
   font-size: 40px;
   color: #000000;
-  transition: -webkit-transform 0.2s ease-out;
-  transition: transform 0.2s ease-out;
-  transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
-  -webkit-transition: transform 0.2s ease-out;
-  -moz-transition: transform 0.2s ease-out;
 }
 .accordion .item input[type="hidden"],
 .accordion .item input[type="hidden"] {
@@ -65,10 +59,6 @@
 }
 .accordion .item input[type="hidden"]:checked + label.menulabel:after,
 .accordion .item input[type="hidden"]:checked + label.menulabel:after {
-  transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
   color: #ffffff;
 }
 .accordion .item .accordion-content {
@@ -77,7 +67,4 @@
   color: #000000;
   background: #ffffff;
   overflow: hidden;
-  transition: padding 0.2s ease;
-  -webkit-transition: padding 0.2s ease;
-  -moz-transition: padding 0.2s ease;
 }
