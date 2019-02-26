@@ -84,3 +84,6 @@
   -webkit-transition: padding 0.2s ease;
   -moz-transition: padding 0.2s ease;
 }
+#accordion div form input{ 
+  display:inline; 
+}
