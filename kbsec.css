@@ -7,7 +7,6 @@
   background: #c14b4b;
   position: relative;
   overflow: hidden;
-  text-align: center;
   font-type: Arial;
   font-size: 14px;
   margin-bottom: 0.25rem;
@@ -16,6 +15,7 @@
 }
 .accordion .item:hover label.menulabel {
   color: #c7c5c5;
+  text-align: center;
 }
 .accordion .item label.menulabel {
   font-size: 1.5rem;
@@ -26,9 +26,11 @@
   position: relative;
   padding: 5px;
   overflow: hidden;
+  text-align: center;
 }
 .accordion .item label.menulabel:after {
   display: none;
+  text-align: center;
   content: "+";
   position: absolute;
   top: 50%;
