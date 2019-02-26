@@ -29,7 +29,7 @@
   position: absolute;
   top: 50%;
   right: 3.5rem;
-  margin-top: -20px;
+  margin-top: 0px;
   font-size: 40px;
   color: #000000;
 }
@@ -50,7 +50,7 @@
 .accordion .item input[type="hidden"]:checked ~ .accordion-content {
   padding: 0;
   height: auto;
-  line-height: 1.5rem;
+  line-height: auto;
 }
 .accordion .item input[type="hidden"]:checked + label.menulabel,
 .accordion .item input[type="hidden"]:checked + label.menulabel {
