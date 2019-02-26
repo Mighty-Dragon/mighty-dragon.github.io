@@ -50,5 +50,5 @@ overflow: hidden;
 transition: height 0.4s ease;
 }
 .acc-content:target{
-height: 170px;
+height: auto;
 }
