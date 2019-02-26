@@ -4,20 +4,23 @@
 
 .accordion .item {
   color: #000000;
-  background: #c7c5c5;
+  background: #800020;
   position: relative;
   overflow: hidden;
+  text-align: center;
+  font-type: Arial;
+  font-size: 14px;
   margin-bottom: 0.25rem;
   border: 0.063rem solid silver;
-  width: 97%;
+  width: 50%;
 }
 .accordion .item:hover label.menulabel {
-  color: #82051a;
+  color: #c7c5c5;
 }
 .accordion .item label.menulabel {
   font-size: 1.5rem;
   display: block;
-  width: 100%;
+  width: 50%;
   border-bottom: 0.063rem solid gray;
   cursor: pointer;
   position: relative;
