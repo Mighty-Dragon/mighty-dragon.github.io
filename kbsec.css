@@ -85,5 +85,5 @@
   -moz-transition: padding 0.2s ease;
 }
 #accordion div form input{ 
-  display:inline; 
+  display:none; 
 }
