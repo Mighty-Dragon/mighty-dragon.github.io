@@ -7,7 +7,7 @@
   background: #c14b4b;
   position: relative;
   overflow: hidden;
-  font-type: Arial;
+  font: Arial;
   font-size: 14px;
   width: 45%;
 }
@@ -29,7 +29,6 @@
 .accordion .item label.menulabel:after {
   display: none;
   text-align: center;
-  content: "+";
   position: absolute;
   top: 50%;
   right: 3.5rem;
@@ -83,7 +82,4 @@
   transition: padding 0.2s ease;
   -webkit-transition: padding 0.2s ease;
   -moz-transition: padding 0.2s ease;
-}
-#accordion div form input{ 
-  display:none; 
 }
