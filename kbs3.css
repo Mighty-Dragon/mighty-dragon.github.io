@@ -7,10 +7,7 @@ box-sizing: border-box;
 }
 body{
 padding-top: 50px;
-font : 1em cursive;
-background-image: url(http://www.mrwallpaper.com/wallpapers/fantasy-winter-scenery-1920x1200.jpg);
-background-size: cover;
-color: #fff;
+color: #000000;
 overflow-x: hidden;
 }
 .container{
@@ -29,8 +26,7 @@ list-style: none;
 display: block;
 cursor: pointer;
 padding: 10px 20px;
-background-color: #000;
-opacity: 0.7;
+background-color: #c14b4b;
 text-transform: uppercase;
 text-decoration: none;
 text-align: center;
@@ -42,8 +38,7 @@ margin-bottom: 10px 0 0 10px;
 margin: 10px;
 }
 .acc-content{
-background-color: #222;
-opacity: 0.7;
+background-color: #ffffff;
 height: 0px;
 overflow: hidden;
 -webkit-transition: height 0.4s ease;
