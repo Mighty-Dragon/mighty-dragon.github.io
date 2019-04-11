@@ -42,7 +42,7 @@ body {
   left: 50%;
   margin: 90px 0;
   transform: translate(-50%, 0);
-  box-shadow: 0 10px 0 0 #ff6873 inset;
+  box-shadow: 0 10px 0 0 #a32020 inset;
   background-color: #fefffa;
   padding: 30px;
 }
@@ -119,7 +119,7 @@ ul li i {
 ul li i:before, ul li i:after {
   content: "";
   position: absolute;
-  background-color: #ff6873;
+  background-color: #a32020;
   width: 3px;
   height: 9px;
 }
