@@ -40,7 +40,7 @@ body {
   display: inline-block;
   position: relative;
   left: 50%;
-  margin: 90px 0;
+  margin: 10px 0;
   transform: translate(-50%, 0);
   box-shadow: 0 10px 0 0 #a32020 inset;
   background-color: #fefffa;
