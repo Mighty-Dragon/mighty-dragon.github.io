@@ -1,94 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400');
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Hind', sans-serif;
+  background: #fff;
+  color: #4d5974;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+
 .container {
-	width: 450px;
-	height: 376px;
+  margin: 0 auto;
+  padding: 4rem;
+  width: 48rem;
 }
 
-// Change component color
-@mixin states($color: $default) {
-	border-color: $color;
-	color: rgba(255, 255, 255, 0.9);
-	background: $color;
-
-	&:hover {
-		border-color: $color;
-		color: rgba(255, 255, 255, 0.6);
-	}
-	&:active {
-		color: rgba(255, 255, 255, 0.9);
-		border-color: darken($color, 10%);
-	}
+h3 {
+  font-size: 1.75rem;
+  color: #373d51;
+  padding: 1.3rem;
+  margin: 0;
 }
 
-// Collapse / Expand Component
-details {
-	@include states($default);
-	border: 1px solid;
-	cursor: pointer;
-	transition: background 0.3s;
-	border-radius: 4px;
-	min-height: 48px;
-	max-height: 60px;
-	transform-origin: top center;
-	transform: rotate(0.1deg);
-	transition: all 0.3s;
-
-	::-webkit-details-marker {
-		display: none;
-	}
-
-	+ details {
-		margin-top: 10px;
-	}
-
-	p {
-		color: #fefefe;
-		line-height: 1.7;
-		margin: 10px 0 0;
-		padding: 0 20px 15px;
-	}
-
-	// Primary Style
-	&.primary {
-		@include states($primary);
-	}
-
-	// Success Style
-	&.success {
-		@include states($sucess);
-	}
-
-	// Square Style
-	&.square {
-		border-radius: 0;
-	}
-
-	&[open] {
-		transition: all 0.6s;
-		min-height: 100px;
-		max-height: 200px;
-	}
+.accordion a {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 3rem 1rem 1rem;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border-bottom: 1px solid #e5e5e5;
 }
 
-summary {
-	outline: none;
-	font-size: 16px;
-	padding: 13px;
-	
-	&:selection {
-		background: transparent;
-	}
+.accordion a:hover,
+.accordion a:hover::after {
+  cursor: pointer;
+  color: #03b5d2;
+}
 
-	&:after {
-		margin-top: 2px;
-		content: "➕";
-		float: left;
-		margin-right: 11px;
-		text-align: center;
-		font-size: 11px;
+.accordion a:hover::after {
+  border: 1px solid #03b5d2;
+}
 
-		[open] & {
-			padding: 0 0 12px 0;
-			content: "➖";
-		}
-	}
+.accordion a.active {
+  color: #03b5d2;
+  border-bottom: 1px solid #03b5d2;
+}
+
+.accordion a::after {
+  font-family: 'Ionicons';
+  content: '\f218';
+  position: absolute;
+  float: right;
+  right: 1rem;
+  font-size: 1rem;
+  color: #7288a2;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #7288a2;
+  text-align: center;
+}
+
+.accordion a.active::after {
+  font-family: 'Ionicons';
+  content: '\f209';
+  color: #03b5d2;
+  border: 1px solid #03b5d2;
+}
+
+.accordion .content {
+  opacity: 0;
+  padding: 0 1rem;
+  max-height: 0;
+  border-bottom: 1px solid #e5e5e5;
+  overflow: hidden;
+  clear: both;
+  -webkit-transition: all 0.2s ease 0.15s;
+  -o-transition: all 0.2s ease 0.15s;
+  transition: all 0.2s ease 0.15s;
+}
+
+.accordion .content p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.accordion .content.active {
+  opacity: 1;
+  padding: 1rem;
+  max-height: 100%;
+  -webkit-transition: all 0.35s ease 0.15s;
+  -o-transition: all 0.35s ease 0.15s;
+  transition: all 0.35s ease 0.15s;
 }
