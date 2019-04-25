@@ -3,10 +3,8 @@
 * {
   box-sizing:border-box;
 }
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 body { 
 
-  font-family:'Lato';
 }
 .heading-primary {
   font-size:2em;
